@@ -5,9 +5,10 @@ const VueLoaderPlugin = require('vue-loader/lib/plugin')
 
 module.exports = {
   mode: 'production',
+  entry: './src/index.js',
   output: {
     filename: 'uploader.min.js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, './dist')
   },
   plugins: [
     new VueLoaderPlugin()
