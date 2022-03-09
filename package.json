@@ -25,7 +25,13 @@
         "url": "https://github.com/chenxiyue/TSUploader.git"
     },
     "devDependencies": {
+        "@babel/core": "^7.17.5",
+        "@babel/plugin-proposal-class-properties": "^7.16.7",
+        "@babel/plugin-transform-runtime": "^7.17.0",
+        "@babel/preset-env": "^7.16.11",
+        "@babel/runtime": "^7.17.2",
         "async": "0.2.x",
+        "babel-loader": "^8.2.3",
         "bunyip": "https://github.com/jayarjo/bunyip/tarball/master",
         "coverjs": "0.0.x",
         "dateformat": "1.x",

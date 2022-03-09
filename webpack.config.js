@@ -10,6 +10,9 @@ module.exports = {
     filename: 'uploader.min.js',
     path: path.resolve(__dirname, './dist')
   },
+  resolve: {
+    extensions: ['.js', '.vue', '.json']
+  },
   plugins: [
     new VueLoaderPlugin()
   ],
@@ -18,6 +21,11 @@ module.exports = {
       {
         test: /\.vue$/,
         use: 'vue-loader'
+      },
+      {
+        test: /\.js$/,
+        use: "babel-loader",
+        exclude: /node_modules/
       }
     ]
   }
